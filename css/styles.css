@@ -1,0 +1,73 @@
+@font-face{
+    font-family: 'Overpass';
+    src: url('http://127.0.0.1:8081/fonts/Overpass_Regular.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Overpass';
+    
+}
+.header {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(to bottom,#c00 40%,#470000 100%);
+    padding: 0 10px;
+}
+.header > .headerTitle {
+    line-height: 50px;
+}
+.navWrapper {
+    float: right;
+    height: 100%;
+}
+
+.navWrapper > .links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navWrapper > .links > li {
+    float: left;
+    border-left: 1px solid #bbb;
+}
+  
+.navWrapper > .links > li a {
+    display: block;
+    font-size: 13px;
+    color: #bbb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navWrapper > .links > li a:hover:not(.active) {
+    color: #fff;
+}
+
+.navWrapper > .links > li > a.active, .navWrapper > .links > li a:hover:not(.active) {
+    box-shadow: 2px 2px 20px 5px #470000 inset;
+    color: #fff;
+}
+
+.mainContent {
+    padding: 10px;
+}
+.mainContent > .caseTable {
+     border-collapse: collapse;
+}
+.mainContent > .caseTable tr > td {
+    padding: 10px 20px 10px 0;
+}
+.mainContent > .caseTable tr > td.value {
+    color: #666;
+}
+.caseTable td.value > .active {
+    color: #ededed;
+    background-color: green;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
